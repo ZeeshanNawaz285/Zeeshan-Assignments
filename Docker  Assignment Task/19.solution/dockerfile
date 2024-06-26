@@ -1,0 +1,7 @@
+FROM alpine
+
+RUN apk add tzdata
+
+RUN cp /usr/share/zoneinfo/Europe/Brussels /etc/localtime
+
+CMD ["date"]

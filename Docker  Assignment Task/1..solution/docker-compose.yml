@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  DB:
+    image: mongo:3
+    
+    #container_name: mongo-db
+    ports:
+    - 27017:27017
+    # volumes:
+    # - Volume_Mongo_DB:/data/db
+  web:
+    image: node:latest
+    # entrypoint: ["npm", "install", "&&", "npm", "start", "&&", "node server.js"]
+    command: "npm start"
+    #container_name: web
+    environment:
+      - MONGO_IP=DB
+    volumes:
+    - .:/work
+    working_dir: /work
+    ports:
+    - 3000:3000
+    # volumes:
+    # - /home/eurus/Volume_Mongo_DB:/tmp
+    # - /home/eurus/Volume_Mongo_DB:/tmp/node_modules
+    depends_on:
+    - DB
+  curl:
+    image: byrnedo/alpine-curl
+    depends_on:
+    - web
+    entrypoint: sh
+    command: -c "sleep 5 && curl http://web:3000"
+#     entrypoint: ["curl", "http://web:3000"]
+# # volumes:
+#   Volume_Mongo_DB:

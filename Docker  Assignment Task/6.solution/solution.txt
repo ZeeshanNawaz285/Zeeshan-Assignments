@@ -1,0 +1,7 @@
+1.  The reason the second command doesn't work is that you're attempting to create a Docker container with the same name test1 
+    as the first one, and Docker doesn't allow multiple containers with the same name to run simultaneously.
+
+2.  To run both commands successfully, you can do one of the following:
+
+    ->  Use different container names
+    ->  Remove the existing container before running the second command

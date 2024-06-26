@@ -1,0 +1,7 @@
+docker commands
+1.  docker build -t testimage .
+    docker images
+2.  docker save -o testimage.tar testimage 
+    du -h testimage.tar
+    ls -lh testimage.tar
+3.  docker history testimage   

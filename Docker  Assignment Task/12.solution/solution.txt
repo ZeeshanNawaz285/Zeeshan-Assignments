@@ -1,0 +1,4 @@
+Answer :  docker images --format "{{.ID}}: {{.CreatedAt}}" alpine:latest 
+
+To quickly and succinctly determine the image ID and created date for an Alpine image,
+you can use the docker images command with filters

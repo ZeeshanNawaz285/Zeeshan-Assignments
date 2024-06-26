@@ -1,0 +1,2 @@
+Answer:   docker exec test1 cat /etc/hosts       (test1 is container name )
+

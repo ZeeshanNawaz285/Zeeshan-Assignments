@@ -1,0 +1,2 @@
+Answer : Yes, a local Docker Compose service container can connect to a container running in another 
+         cluster, but it requires some network configuration to enable communication between the two. 

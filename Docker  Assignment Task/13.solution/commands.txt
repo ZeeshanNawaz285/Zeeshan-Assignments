@@ -1,0 +1,11 @@
+docker build -t ping-image -f Dockerfile.ping .
+docker build -t pong-image -f Dockerfile.pong .
+
+docker run -d --name ping-container ping-image
+docker run -d --name pong-container pong-image
+
+docker logs ping-container
+docker logs pong-container
+
+docker rm -f ping-container pong-container
+docker rmi ping-image pong-image

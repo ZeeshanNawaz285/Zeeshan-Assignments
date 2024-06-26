@@ -1,0 +1,8 @@
+
+ docker build -t alpine .
+
+#Save the Docker image to a tar archive:
+ docker save -o my-alpine.tar alpine   
+
+#Extract the tar archive:
+  tar -xvf my-alpine.tar

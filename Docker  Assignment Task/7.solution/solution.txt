@@ -1,0 +1,3 @@
+Question : If you have a already running container that you need to pass a file to how can you send that file to it?
+Answer: Mounting volumes :If the container is running with volumes mounted, you can copy files directly into the volume 
+        directory on the host machine. The changes will be reflected inside the container.

@@ -1,0 +1,5 @@
+docker build -t sed-image .
+docker build -t echo-image .
+
+
+docker run --rm echo-image echo "change this word to" | docker run --rm -i sed-image sed 's/this/that/g'

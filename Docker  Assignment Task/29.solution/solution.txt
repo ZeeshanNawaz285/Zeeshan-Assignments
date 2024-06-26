@@ -1,0 +1,1 @@
+Answer:     simple way to check if the ubuntu:16.04 image is signed for content trust:       docker trust inspect --pretty ubuntu:16.04

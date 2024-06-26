@@ -1,0 +1,2 @@
+docker build -t brussels-time .
+docker run --rm brussels-time 

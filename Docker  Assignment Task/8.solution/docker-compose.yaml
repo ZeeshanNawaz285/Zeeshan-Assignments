@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  my_service:
+    image: python:3.9
+    command: python /app/main.py
+    volumes: 
+      - ./:/app
+
+  my_service_2:
+    image: python:3.9
+    command: bash -c 'sleep 5 && python /app/service2.py'
+    volumes: 
+      - ./:/app
+   

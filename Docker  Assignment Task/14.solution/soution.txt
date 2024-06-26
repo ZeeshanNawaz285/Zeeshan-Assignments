@@ -1,0 +1,5 @@
+Answer :    yes , All the data show , To get metadata for exactly what you want , the following commands are 
+docker image inspect testthing
+docker volune  inspect testthing
+docker network inspect testthing
+
