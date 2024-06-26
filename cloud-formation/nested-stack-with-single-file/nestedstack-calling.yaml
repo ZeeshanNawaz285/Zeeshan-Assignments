@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+# VPC with Public and Private Subnets, Internet Gateway, NAT Gateway, and EC2 instances public and private 
+Resources:
+  NestedCall:
+    Type: AWS::CloudFormation::Stack 
+    Properties:
+      TemplateURL: https://zeeshan-nbucket.s3.us-east-2.amazonaws.com/vpc%2Csubnet%2Cigw%2Croute%2Cnat%2Cec2.yaml
+      TimeoutInMinutes: 60
+ 
+Outputs:
+  StackRef:
+    Value: !Ref NestedCall
+  OutputFormNestedStack:
+    Value: !GetAtt NestedCall.Outputs.BucketName         
