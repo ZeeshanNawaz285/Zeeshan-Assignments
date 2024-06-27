@@ -1,3 +1,5 @@
+#This script helps in maintaining a list of user names by storing them in a file and providing the option to display all stored names upon request.
+
 user_name = input ("enter a name to store in a file or enter to proceed :  ")
 if user_name:
     with open ('user_info.txt', 'a') as file :
