@@ -1,3 +1,6 @@
+#In simple terms, this code reads a log file to: Determine how long a device was ON by calculating the duration between "Device State: ON" and "Device State: OFF". Record and print the timestamps when the device encountered errors ("Device State: ERR").
+
+
 from datetime import datetime
 '''
 def readlogfile(filename1):
