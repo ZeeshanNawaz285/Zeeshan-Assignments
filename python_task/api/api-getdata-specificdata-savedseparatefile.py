@@ -1,3 +1,5 @@
+#In simple terms, this code: Retrieves data from an API. Saves the entire fetched data to a JSON file. Extracts specific pieces of data (e.g., titles) from the fetched data and saves them to a separate text file.
+
 import requests
 import json
 
