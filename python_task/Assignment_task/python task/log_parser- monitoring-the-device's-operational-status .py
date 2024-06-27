@@ -1,3 +1,8 @@
+#In simple terms, this code reads a log file to: 
+#  1. Calculate Device ON Duration: Identifies when the device was turned ON and OFF, calculates the duration it was ON, and prints this duration.
+#  2. Record Error Timestamps: Collects and prints the timestamps when the device encountered errors.
+# The script helps in monitoring the device's operational status and identifying periods of errors by analyzing the log file.
+
 from datetime import datetime
 '''
 def readlogfile(filename1):
