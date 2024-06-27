@@ -1,3 +1,5 @@
+#The purpose of this code is to demonstrate how to: 1.Fetch Data from an API: 2.Check if the Request is Successful:  3.Process and Print Data:  4.Save Data to a File:  5.Handle Errors:
+#In simple terms, this code gets user information from an online service, prints it out, and saves it to a file while handling any errors that may occur during these processes.
 '''
 # import requests module 
 import requests 
