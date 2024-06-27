@@ -1,3 +1,7 @@
+#this code downloads a web page's HTML content, extracts the text within all <p> tags using regular expressions, and saves these paragraphs into a text file named "scrap_file.txt". 
+#This approach is commonly used for scraping specific content from web pages for further processing or analysis.
+
+
 import re
 import requests
 
