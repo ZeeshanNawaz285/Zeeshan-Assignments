@@ -1,3 +1,6 @@
+#This code demonstrates how to: Fetch data from an API.  Save the fetched data to a JSON file.  Extract specific information (lines starting with "title:") from the saved file and print them.
+
+
 '''import requests
 import json
 
