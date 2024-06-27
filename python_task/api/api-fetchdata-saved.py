@@ -1,3 +1,6 @@
+#The purpose of this code is to demonstrate how to: Fetch Data from a Public API:  Handle Errors Gracefully:  Save the Fetched Data to a File:
+#In simple terms, this code retrieves data from an online API and saves it to a file named "output.js". It includes error handling to manage any issues that might occur during these processes.
+
 import requests
 
 def fetch_data_from_api(api_url):
